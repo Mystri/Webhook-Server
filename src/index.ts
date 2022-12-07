@@ -7,7 +7,7 @@ const port = 8014;
 app.use(bodyParser.json())
 
 app.post( "/webhook", ( req, res ) => {
-  console.log(req.body);
+  console.log(req.body.text);
   
 } );
 
