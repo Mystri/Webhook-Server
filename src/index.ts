@@ -4,7 +4,7 @@ const app = express();
 const port = 8014;
 
 app.post( "/webhook", ( req, res ) => {
-  console.log(req.body);
+  console.dir(req.body);
 } );
 
 app.listen( port, () => {
