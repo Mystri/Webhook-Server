@@ -5,8 +5,10 @@ const port = 8014;
 
 
 app.post( "/webhook", ( req, res ) => {
-  console.dir(req);
+  console.log(req);
+  console.log(req.params);
   console.log(req.body);
+  
 } );
 
 app.listen( port, () => {
